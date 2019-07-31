@@ -4,8 +4,8 @@ import sys
 import imaplib
 import getpass
 
-IMAP_SERVER = 'red.keystealth.org'
-EMAIL_ACCOUNT = "scott"
+IMAP_SERVER = '<imap.server.com>'
+EMAIL_ACCOUNT = "<username>"
 
 def main():
   if len(sys.argv) < 3:
