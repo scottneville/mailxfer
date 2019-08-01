@@ -9,5 +9,9 @@ Migrating from self-hosted email to a provider left me with a large amount of ma
 
 **getmessage.py** - pull a single message. Specify the IMAP server and username in the script. Supply the folder name and the number of the email on the command line. *NOTE: This is the number of the message in the folder, not the Message-ID.*
 
+## Known Issues
+The script does not deal well with malformed emails. Message-ID's that are not in the correct format will likely cause it to bomb and I was not all that interested in fixing that elegantly rather than just deleting the offending email and comtinuing.
+If you are transferring a large amount of spam emails you will likely run into this enough to be annoying. In particular, there is one particular spammer/spam script that generated random sender/subject emails with just an image in the body, that tends to create emails that just wont be accepted by some of the major mailbox providers.
+
 ## Warranty
 NONE! Use it at your own risk. If this helps you, good. If it doesnt, then you own both pieces.
